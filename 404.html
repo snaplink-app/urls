@@ -1,0 +1,58 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+    <meta name="author" content="Snaplink">
+    <meta name="robots" content="index, follow">
+    <meta name="title" content="Snaplink">
+    <meta name="application-name" content="Snaplink"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
+    <meta name="theme-color" content="#FFFC00">
+    <link rel="canonical" href="https://s.nap.chat">
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="assets/logo/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/logo/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/logo/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/logo/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="assets/logo/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="assets/logo/apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="assets/logo/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="assets/logo/favicon-16x16.png" sizes="16x16" />
+    <meta name="msapplication-TileColor" content="#FFFC00" />
+    <meta name="msapplication-TileImage" content="assets/logo/mstile-144x144.png" />
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/preload.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>Snaplink</title>
+    <script src="js/mobile.js"></script>
+    <script src="js/index.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127795430-7"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "UA-127795430-7");
+    </script>
+  </head>
+  <body style="opacity: 0;">
+    <div id="footer" onclick="createYours()">
+      <img id="logo" src="assets/logo/favicon-small.png">
+      <span>Create your own Snaplink</span>
+    </div>
+    <div id="content">
+      <div id="navbar">
+        <img id="image" class="logo">
+      </div>
+      <h1>Click to add</h1>
+      <h1 class="username" onclick="redirect()"><span id="username"></span></h1>
+      <div id="button-bar">
+        <button id="no-thanks" onclick="noThanks()">No thanks</button>
+        <button id="add" onclick="redirect()">Add on Snapchat</button>
+      </div>
+    </div>
+  </body>
+</html>
